@@ -18,7 +18,7 @@ pipeline.yml        - A simple hello-world pipeline to run.
 To do the initial loading of the pipeline:
 
 ```
-fly -t yourtarget set-pipeline -c pipeline-update.yml -p meta-pipeline
+fly -t yourtarget set-pipeline -c meta-pipeline.yml -p meta-pipeline
 ```
 
 To delete it:

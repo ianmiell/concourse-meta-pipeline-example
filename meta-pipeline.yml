@@ -6,7 +6,7 @@ resource_types:
     repository: concourse/concourse-pipeline-resource
 
 resources:
-- name: pipeline-update
+- name: meta-pipeline
   type: git
   source:
     uri: https://github.com/ianmiell/concourse-pipeline-example
@@ -24,8 +24,8 @@ resources:
 jobs:
 - name: set-pipeline
   plan:
-  - get: pipeline-update
+  - get: meta-pipeline
     trigger: true
   - put: my-pipelines
     params:
-      pipelines_file: pipeline-update/pipelines.yml
+      pipelines_file: meta-pipeline/pipelines.yml

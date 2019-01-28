@@ -2,5 +2,5 @@
 pipelines:
 - name: my-pipeline
   team: main
-  config_file: pipeline-update/pipeline.yml
+  config_file: meta-pipeline/pipeline.yml
   unpaused: true
