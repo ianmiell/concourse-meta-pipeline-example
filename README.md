@@ -26,4 +26,3 @@ To delete it:
 ```
 fly -t yourtarget destroy-pipeline -p meta-pipeline
 ```
-
