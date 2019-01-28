@@ -3,3 +3,4 @@ pipelines:
 - name: my-pipeline
   team: main
   config_file: pipeline-update/pipeline.yml
+  unpaused: true

@@ -6,6 +6,11 @@ resource_types:
     repository: concourse/concourse-pipeline-resource
 
 resources:
+- name: pipeline-update
+  type: git
+  source:
+    uri: https://github.com/ianmiell/concourse-pipeline-example
+
 - name: my-pipelines
   type: concourse-pipeline
   source:
@@ -15,10 +20,6 @@ resources:
     - name: main
       username: admin
       password: admin
-- name: pipeline-update
-  type: git
-  source:
-    uri: https://github.com/ianmiell/concourse-pipeline-example
 
 jobs:
 - name: set-pipeline
@@ -28,5 +29,3 @@ jobs:
   - put: my-pipelines
     params:
       pipelines_file: pipeline-update/pipelines.yml
-
-
