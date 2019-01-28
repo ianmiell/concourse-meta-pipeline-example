@@ -1,8 +1,15 @@
 ---
+resources:
+- name: this-repo
+  type: git
+  source:
+    uri: https://github.com/ianmiell/concourse-pipeline-example
 jobs:
 - name: job-hello-world
   public: true
   plan:
+  - get: this-repo
+    trigger: true
   - task: hello-world
     config:
       platform: linux
