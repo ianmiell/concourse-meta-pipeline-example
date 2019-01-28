@@ -27,6 +27,6 @@ jobs:
     trigger: true
   - put: my-pipelines
     params:
-      pipelines_file: /tmp/build/get/concourse-pipeline-example/pipeline.yml
+      pipelines_file: pipeline-update/pipelines.yml
 
 
