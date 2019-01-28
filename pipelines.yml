@@ -1,5 +1,5 @@
 ---
 pipelines:
 - name: my-pipeline
-  team: team-1
+  team: main
   config_file: pipeline-update/pipeline.yml

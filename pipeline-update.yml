@@ -12,7 +12,7 @@ resources:
     target: https://concourse.meirionconsulting.com
     insecure: "false"
     teams:
-    - name: team-1
+    - name: main
       username: admin
       password: admin
 - name: pipeline-update
