@@ -19,7 +19,7 @@ The files are:
 Note that the `pipeline.yml` file could be in a separate repository, with some
 minor adjustments to the code. It is in one repository here for simplicity.
 
-## Usage
+## Usage
 
 To do the initial loading of the pipeline:
 
